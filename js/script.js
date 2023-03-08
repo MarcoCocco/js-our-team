@@ -48,3 +48,11 @@ let teamList = [
 
 ];
 
+for (let i = 0; i < teamList.length; i++) {
+
+    for (let key in teamList[i]) {
+
+        console.log(`${key}: ${teamList[i][key]}`);
+
+    }
+}
