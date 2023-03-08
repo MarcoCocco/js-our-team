@@ -48,11 +48,19 @@ let teamList = [
 
 ];
 
+let listEl = document.getElementById('list');
+
 for (let i = 0; i < teamList.length; i++) {
 
     for (let key in teamList[i]) {
 
+        let newLiEl = document.createElement('li');
+        listEl.append(newLiEl);
+        newLiEl.textContent = `${key}: ${teamList[i][key]}`;
+        
         console.log(`${key}: ${teamList[i][key]}`);
 
     }
+
 }
+
